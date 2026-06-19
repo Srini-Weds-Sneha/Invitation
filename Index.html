@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Srinivasan & Sneha | 19 July 2026</title>
+<meta name="description" content="Join Srinivasan and Sneha as they celebrate their wedding on 19 July 2026 at Urban Greens, Coimbatore.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Italianno&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ivory:#FBF4EE;
+    --blush:#F7DCD2;
+    --rose:#D8A39C;
+    --moss:#9FB08C;
+    --gold:#C8A06B;
+    --ink:#5B4636;
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+
+  body{
+    font-family:'Jost', sans-serif;
+    font-weight:300;
+    color:var(--ink);
+    background:var(--ivory);
+    overflow-x:hidden;
+    position:relative;
+  }
+
+  body::before{
+    content:'';
+    position:fixed;
+    inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M20 6 C10 14 10 26 20 34 C30 26 30 14 20 6Z' fill='none' stroke='%23C8A06B' stroke-width='1' opacity='0.5'/%3E%3C/svg%3E");
+    background-size:80px 80px;
+    opacity:0.4;
+    pointer-events:none;
+    z-index:0;
+  }
+
+  h1,h2,h3{ font-family:'Cormorant Garamond', serif; font-weight:500; color:var(--ink); }
+  a{ color:inherit; text-decoration:none; }
+  section{ position:relative; z-index:1; padding:5rem 1.5rem; max-width:880px; margin:0 auto; }
+
+  /* ---------- decorative svg sprite ---------- */
+  .petal{ fill:var(--rose); }
+  .bloom-center{ fill:var(--gold); }
+  .leaf-shape{ fill:var(--moss); }
+  .leaf-vein{ stroke:var(--ivory); stroke-width:2; fill:none; opacity:.55; }
+
+  /* ---------- hero ---------- */
+  .hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:radial-gradient(ellipse at top, var(--blush) 0%, var(--ivory) 65%);
+    position:relative;
+    overflow:hidden;
+    padding:2rem 1.5rem;
+  }
+  .corner{ position:absolute; width:200px; height:200px; opacity:0.9; }
+  .corner--tl{ top:-10px; left:-10px; }
+  .corner--br{ bottom:-10px; right:-10px; transform:rotate(180deg); }
+  .hero-inner{ position:relative; z-index:2; max-width:560px; animation:riseIn 1.2s ease both; }
+  @keyframes riseIn{ from{ opacity:0; transform:translateY(24px);} to{ opacity:1; transform:translateY(0);} }
+
+  .eyebrow{ font-family:'Italianno', cursive; font-size:2.1rem; color:var(--rose); margin-bottom:0.25rem; }
+  .names{ font-size:3.2rem; line-height:1.15; letter-spacing:0.02em; }
+  .names .amp{ display:block; font-family:'Italianno', cursive; font-size:2.4rem; color:var(--gold); margin:0.1em 0; }
+  .date-line{ margin-top:1.1rem; font-size:1.05rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--ink); }
+  .tagline{ margin-top:1.4rem; font-style:italic; font-size:1.05rem; line-height:1.7; color:#7A6450; }
+
+  .btn, .btn-outline{
+    display:inline-block; margin-top:2.2rem; padding:0.85rem 2rem; border-radius:999px;
+    font-size:0.85rem; letter-spacing:0.12em; text-transform:uppercase;
+    transition:transform 0.25s ease, background 0.25s ease;
+  }
+  .btn{ background:var(--rose); color:#fff; }
+  .btn:hover{ background:var(--gold); transform:translateY(-2px); }
+  .btn-outline{ border:1px solid var(--gold); color:var(--ink); margin-right:0.6rem; }
+  .btn-outline:hover{ background:var(--gold); color:#fff; }
+
+  /* ---------- divider ---------- */
+  .divider{ display:flex; justify-content:center; padding:0 0 2rem; position:relative; z-index:1; }
+  .divider svg{ width:min(420px, 80vw); height:40px; }
+  .divider path{ fill:none; stroke:var(--moss); stroke-width:2; }
+
+  /* ---------- reveal ---------- */
+  .reveal{ opacity:0; transform:translateY(30px); transition:opacity 0.8s ease, transform 0.8s ease; }
+  .reveal.visible{ opacity:1; transform:translateY(0); }
+
+  /* ---------- blessing ---------- */
+  .blessing{ text-align:center; padding-top:1rem; padding-bottom:1rem; }
+  .blessing .mark{ font-size:1.6rem; color:var(--gold); display:block; margin-bottom:0.6rem; }
+  .blessing p{ font-style:italic; font-size:1rem; color:#7A6450; letter-spacing:0.03em; }
+
+  /* ---------- details ---------- */
+  .details{ text-align:center; }
+  .details h2{ font-size:1.9rem; margin-bottom:2rem; }
+  .card{
+    background:var(--blush); border:1px solid var(--gold); border-radius:20px;
+    padding:2.5rem 2rem; box-shadow:0 12px 30px -18px rgba(91,70,54,0.35);
+  }
+  .card h3{ font-size:1.5rem; margin-bottom:0.8rem; color:var(--rose); }
+  .card .when{ font-size:1.05rem; line-height:1.7; margin-bottom:1rem; }
+  .card .where{ font-size:0.95rem; line-height:1.7; color:#7A6450; margin-bottom:1.5rem; }
+
+  /* ---------- venue ---------- */
+  .venue{ text-align:center; }
+  .venue h2{ font-size:1.9rem; margin-bottom:1.6rem; }
+  .map-frame{ border-radius:20px; overflow:hidden; border:1px solid var(--gold); }
+  .map-frame iframe{ width:100%; height:320px; border:0; display:block; }
+
+  /* ---------- meet the couple ---------- */
+  .meet{ text-align:center; }
+  .meet h2{ font-size:1.9rem; margin-bottom:0.6rem; }
+  .meet .sub{ font-family:'Italianno', cursive; font-size:1.6rem; color:var(--rose); display:block; margin-bottom:1.8rem; }
+  .meet-frame{
+    position:relative; max-width:520px; margin:0 auto 1.8rem; border-radius:24px;
+    overflow:hidden; border:1px solid var(--gold);
+    box-shadow:0 16px 36px -20px rgba(91,70,54,0.4);
+  }
+  .meet-frame img{ width:100%; display:block; }
+  .meet-frame .leaf-deco{ position:absolute; width:70px; height:120px; opacity:0.85; }
+  .meet-frame .leaf-deco--tl{ top:-14px; left:-14px; }
+  .meet-frame .leaf-deco--br{ bottom:-14px; right:-14px; transform:rotate(180deg); }
+  .meet p.copy{ max-width:480px; margin:0 auto; font-size:0.98rem; line-height:1.8; color:#7A6450; }
+
+  /* ---------- things to know ---------- */
+  .things{ text-align:center; }
+  .things h2{ font-size:1.9rem; margin-bottom:0.5rem; }
+  .things .sub{ font-size:0.92rem; color:#7A6450; max-width:520px; margin:0 auto 2.4rem; line-height:1.7; }
+  .thing-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:1.4rem; }
+  .thing-card{
+    background:var(--blush); border:1px solid var(--gold); border-radius:18px;
+    padding:1.8rem 1rem; display:flex; flex-direction:column; align-items:center; gap:0.6rem;
+  }
+  .thing-icon{ width:38px; height:38px; display:flex; align-items:center; justify-content:center;
+    border:1px solid var(--gold); border-radius:50%; font-family:'Cormorant Garamond', serif;
+    font-size:1.2rem; color:var(--rose); }
+  .thing-card h4{ font-family:'Cormorant Garamond', serif; font-size:1.1rem; }
+  .thing-card p{ font-size:0.85rem; color:#7A6450; line-height:1.5; }
+
+  /* ---------- countdown ---------- */
+  .countdown{ text-align:center; }
+  .countdown h2{ font-size:1.9rem; margin-bottom:0.4rem; }
+  .countdown .sub{ font-size:0.9rem; color:#7A6450; margin-bottom:2rem; }
+  .timer{ display:flex; justify-content:center; gap:1rem; flex-wrap:wrap; }
+  .timer div{ background:var(--blush); border:1px solid var(--gold); border-radius:16px; padding:1rem 1.3rem; min-width:88px; }
+  .timer span{ display:block; font-family:'Cormorant Garamond', serif; font-size:2rem; font-weight:600; color:var(--ink); }
+  .timer label{ font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--rose); }
+
+  /* ---------- footer ---------- */
+  footer{
+    text-align:center; padding:3.5rem 1.5rem 3rem;
+    background:linear-gradient(180deg, var(--ivory), var(--blush));
+    position:relative; z-index:1;
+  }
+  footer svg{ width:60px; height:60px; margin-bottom:0.8rem; }
+  footer p{ font-family:'Cormorant Garamond', serif; font-size:1.2rem; font-style:italic; }
+  footer .credit{ margin-top:1.4rem; font-family:'Jost', sans-serif; font-size:0.72rem; letter-spacing:0.08em; color:#B89A8C; font-style:normal; }
+
+  a:focus-visible, button:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+
+  @media (max-width:600px){
+    .names{ font-size:2.3rem; }
+    .corner{ width:130px; height:130px; }
+    .timer div{ min-width:72px; padding:0.8rem 0.9rem; }
+    .thing-grid{ grid-template-columns:1fr; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation:none !important; transition:none !important; }
+  }
+</style>
+</head>
+<body>
+
+<svg style="display:none">
+  <symbol id="bloom" viewBox="0 0 100 100">
+    <ellipse class="petal" cx="50" cy="26" rx="13" ry="24"/>
+    <ellipse class="petal" cx="50" cy="26" rx="13" ry="24" transform="rotate(72 50 50)"/>
+    <ellipse class="petal" cx="50" cy="26" rx="13" ry="24" transform="rotate(144 50 50)"/>
+    <ellipse class="petal" cx="50" cy="26" rx="13" ry="24" transform="rotate(216 50 50)"/>
+    <ellipse class="petal" cx="50" cy="26" rx="13" ry="24" transform="rotate(288 50 50)"/>
+    <circle class="bloom-center" cx="50" cy="50" r="9"/>
+  </symbol>
+  <symbol id="leaf" viewBox="0 0 60 100">
+    <path class="leaf-shape" d="M30 4 C8 26 8 74 30 96 C52 74 52 26 30 4 Z"/>
+    <path class="leaf-vein" d="M30 12 L30 88"/>
+  </symbol>
+</svg>
+
+<section class="hero">
+  <svg class="corner corner--tl" viewBox="0 0 200 200" aria-hidden="true">
+    <use href="#leaf" x="-5" y="50" width="60" height="100" transform="rotate(-25 25 100)"/>
+    <use href="#leaf" x="25" y="15" width="50" height="85" transform="rotate(10 50 55)"/>
+    <use href="#bloom" x="45" y="45" width="72" height="72"/>
+  </svg>
+  <svg class="corner corner--br" viewBox="0 0 200 200" aria-hidden="true">
+    <use href="#leaf" x="-5" y="50" width="60" height="100" transform="rotate(-25 25 100)"/>
+    <use href="#leaf" x="25" y="15" width="50" height="85" transform="rotate(10 50 55)"/>
+    <use href="#bloom" x="45" y="45" width="72" height="72"/>
+  </svg>
+
+  <div class="hero-inner">
+    <p class="eyebrow">The Wedding Of</p>
+    <h1 class="names">Srinivasan<span class="amp">&amp;</span>Sneha</h1>
+    <p class="date-line">Sunday · 19th July 2026</p>
+    <p class="tagline">Together with their families, joyfully invite you to celebrate the beginning of their forever.</p>
+    <a href="#details" class="btn">View Invitation ↓</a>
+  </div>
+</section>
+
+<div class="blessing">
+  <span class="mark">✦</span>
+  <p>With the love and blessings of both families</p>
+</div>
+
+<div class="divider">
+  <svg viewBox="0 0 400 40"><path d="M0,20 C50,0 100,40 150,20 S250,0 300,20 S370,35 400,20"/></svg>
+</div>
+
+<section class="details reveal" id="details">
+  <h2>The Wedding Day</h2>
+  <div class="card">
+    <h3>Wedding Ceremony</h3>
+    <p class="when">Sunday, 19 July 2026<br><!-- EDIT: replace with the confirmed muhurtham time -->Time to be announced</p>
+    <p class="where">
+      Urban Greens<br>
+      Vijayakumar Layout Main Rd, KNG Pudur Pirivu<br>
+      Coimbatore, Tamil Nadu 641108
+    </p>
+    <a class="btn-outline" target="_blank" rel="noopener"
+       href="https://www.google.com/maps/search/?api=1&query=Urban+Greens+Vijayakumar+Layout+Main+Rd+KNG+Pudur+Pirivu+Coimbatore+Tamil+Nadu+641108">Get Directions</a>
+    <a class="btn-outline" id="calendarLink" target="_blank" rel="noopener" href="#">Add to Calendar</a>
+  </div>
+</section>
+
+<section class="venue reveal">
+  <h2>Find Us Here</h2>
+  <div class="map-frame">
+    <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=Urban+Greens+Vijayakumar+Layout+Main+Rd+KNG+Pudur+Pirivu+Coimbatore+Tamil+Nadu+641108&output=embed"></iframe>
+  </div>
+</section>
+
+<section class="meet reveal">
+  <h2>Meet the Couple</h2>
+  <span class="sub">Srinivasan &amp; Sneha</span>
+  <div class="meet-frame">
+    <svg class="leaf-deco leaf-deco--tl" viewBox="0 0 60 100" aria-hidden="true"><use href="#leaf" width="60" height="100"/></svg>
+    <svg class="leaf-deco leaf-deco--br" viewBox="0 0 60 100" aria-hidden="true"><use href="#leaf" width="60" height="100"/></svg>
+    <img src="images/couple.png" alt="Srinivasan and Sneha">
+  </div>
+  <p class="copy"><!-- EDIT: personalise this with your own words -->We're so glad you'll be there to celebrate with us. This new chapter means even more with the people we love around us — thank you for being part of our story.</p>
+</section>
+
+<section class="things reveal">
+  <h2>Things To Know</h2>
+  <p class="sub">A few small details to help you settle in before the celebrations begin.</p>
+  <div class="thing-grid">
+    <div class="thing-card">
+      <div class="thing-icon">#</div>
+      <h4>Hashtag</h4>
+      <!-- EDIT: pick the hashtag you'd like guests to use -->
+      <p>Share your photos using #SrinivasanWedsSneha</p>
+    </div>
+    <div class="thing-card">
+      <div class="thing-icon">✿</div>
+      <h4>Dress Code</h4>
+      <!-- EDIT: add your preferred colours / dress code -->
+      <p>Pastels &amp; florals are most welcome — details to follow</p>
+    </div>
+    <div class="thing-card">
+      <div class="thing-icon">P</div>
+      <h4>Parking</h4>
+      <!-- EDIT: confirm parking details with the venue -->
+      <p>Parking is available on site at Urban Greens</p>
+    </div>
+  </div>
+</section>
+
+<section class="countdown reveal" id="countdown">
+  <h2>The Countdown Begins</h2>
+  <p class="sub">Until we say "I do"</p>
+  <div class="timer">
+    <div><span id="days">00</span><label>Days</label></div>
+    <div><span id="hours">00</span><label>Hours</label></div>
+    <div><span id="mins">00</span><label>Minutes</label></div>
+    <div><span id="secs">00</span><label>Seconds</label></div>
+  </div>
+</section>
+
+<footer>
+  <svg viewBox="0 0 100 100"><use href="#bloom" width="100" height="100"/></svg>
+  <p>With love,<br>Srinivasan &amp; Sneha</p>
+  <p class="credit">19 · 07 · 2026</p>
+</footer>
+
+<script>
+  // ----- Countdown -----
+  const weddingDate = new Date("2026-07-19T00:00:00+05:30").getTime();
+  function tick(){
+    const now = Date.now();
+    const diff = Math.max(weddingDate - now, 0);
+    const d = Math.floor(diff / 86400000);
+    const h = Math.floor((diff % 86400000) / 3600000);
+    const m = Math.floor((diff % 3600000) / 60000);
+    const s = Math.floor((diff % 60000) / 1000);
+    document.getElementById('days').textContent = String(d).padStart(2,'0');
+    document.getElementById('hours').textContent = String(h).padStart(2,'0');
+    document.getElementById('mins').textContent = String(m).padStart(2,'0');
+    document.getElementById('secs').textContent = String(s).padStart(2,'0');
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  // ----- Add to calendar (Google Calendar template link) -----
+  const calLink = document.getElementById('calendarLink');
+  const calText = encodeURIComponent("Srinivasan & Sneha's Wedding");
+  const calDetails = encodeURIComponent("Join us as we celebrate the wedding of Srinivasan & Sneha.");
+  const calLocation = encodeURIComponent("Urban Greens, Vijayakumar Layout Main Rd, KNG Pudur Pirivu, Coimbatore, Tamil Nadu 641108");
+  calLink.href = `https://www.google.com/calendar/render?action=TEMPLATE&text=${calText}&dates=20260719T000000Z/20260719T180000Z&details=${calDetails}&location=${calLocation}`;
+
+  // ----- Scroll reveal -----
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduceMotion && 'IntersectionObserver' in window){
+    const obs = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){ entry.target.classList.add('visible'); }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
+  }
+</script>
+
+</body>
+</html>
+
