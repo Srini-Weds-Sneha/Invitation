@@ -322,7 +322,8 @@
 
     <p class="eyebrow">The Wedding Of</p>
     <h1 class="names">Srinivasan<span class="amp">&amp;</span>Sneha</h1>
-    <p class="date-line">Sunday · 19th July 2026</p>
+    <p class="date-line">Wedding  · Reception</p>
+    <p class="date-line">12th July 2026 · 19th July 2026</p>
     <p class="tagline">Together with their families, joyfully invite you to celebrate the beginning of their forever.</p>
     <a href="#details" class="btn">View Invitation <span class="arrow">↓</span></a>
   </div>
@@ -350,23 +351,41 @@
 </div>
 
 <section class="details reveal" id="details">
-  <h2>The Wedding Day</h2>
+  <h2>The Wedding & Reception Day</h2>
   <div class="card">
     <h3>Wedding Ceremony</h3>
-    <p class="when">Sunday, 19 July 2026<br><!-- EDIT: replace with the confirmed muhurtham time -->Time to be announced</p>
+    <p class="when">Sunday, 12 July 2026<br><!-- EDIT: replace with the confirmed muhurtham time -->7.25 am to 9.30 am</p>
+    <p class="where">
+      Shri Krishnan Temple - Radhika Auditorium<br>
+      50, Vadakkanthara Road, Nellissery<br>
+      Palakkad, Kerala 678012
+    </p>
+	<h3>Reception</h3>
+    <p class="when">Sunday, 19 July 2026<br><!-- EDIT: replace with the confirmed muhurtham time -->6.30 pm to 9.30 pm</p>
     <p class="where">
       Urban Greens<br>
       Vijayakumar Layout Main Rd, KNG Pudur Pirivu<br>
       Coimbatore, Tamil Nadu 641108
     </p>
     <a class="btn-outline" target="_blank" rel="noopener"
-       href="https://www.google.com/maps/search/?api=1&query=Urban+Greens+Vijayakumar+Layout+Main+Rd+KNG+Pudur+Pirivu+Coimbatore+Tamil+Nadu+641108">Get Directions</a>
+       href="https://www.google.com/maps/place/Radhika+Wedding+Hall/@10.7809357,76.6446745,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba86e00fb8caa97:0x8525f1c4f385c4f8!8m2!3d10.7809357!4d76.6446745!16s%2Fg%2F1tfslf2k!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D">Wedding Direction</a>
+    <a class="btn-outline" target="_blank" rel="noopener"
+       href="https://www.google.com/maps/search/?api=1&query=Urban+Greens+Vijayakumar+Layout+Main+Rd+KNG+Pudur+Pirivu+Coimbatore+Tamil+Nadu+641108">Reception Direction</a>
+
     <a class="btn-outline" id="calendarLink" target="_blank" rel="noopener" href="#">Add to Calendar</a>
   </div>
 </section>
-
 <section class="venue reveal">
   <h2>Find Us Here</h2>
+  <h3>Wedding Ceremony</h3>
+  <div class="map-frame">
+    <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=Radhika+Wedding+Hall+50+Vadakkanthara+Rd+Nellissery+Vadakkanthara+Palakkad+Kerala+678012
+&output=embed"></iframe>
+</div>
+</section>
+<section class="venue reveal">
+<h3>Reception Ceremony</h3>
   <div class="map-frame">
     <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
       src="https://www.google.com/maps?q=Urban+Greens+Vijayakumar+Layout+Main+Rd+KNG+Pudur+Pirivu+Coimbatore+Tamil+Nadu+641108&output=embed"></iframe>
@@ -402,14 +421,14 @@
 <footer>
   <svg viewBox="0 0 100 100"><use href="#bloom" width="100" height="100"/></svg>
   <p>With love,<br>Srinivasan &amp; Sneha</p>
-  <p class="credit">19 · 07 · 2026</p>
+  <p class="credit">12 · 07 · 2026 - 19 · 07 · 2026</p>
 </footer>
 
 <button class="top-btn" id="topBtn" aria-label="Back to top">↑</button>
 
 <script>
   // ----- Countdown -----
-  const weddingDate = new Date("2026-07-19T00:00:00+05:30").getTime();
+  const weddingDate = new Date("2026-07-12T00:00:00+05:30").getTime();
   function tick(){
     const now = Date.now();
     const diff = Math.max(weddingDate - now, 0);
